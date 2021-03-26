@@ -24,7 +24,7 @@ const WeatherCard = ({dt, temp_min, temp_max, main, humidity, feels_like, icon})
         <p>Min: {Math.round(temp_min - 273)} °C</p>
         {/* maximum temperature */}
         <p>Max: {Math.round(temp_max - 273)} °C</p>
-        <p>Feels like: {feels_like}</p>
+        <p>Feels like: {Math.round(feels_like - 273)} °C</p>
         <p>Humidity: {humidity}</p>
       </Card.Body>
     </Card>
