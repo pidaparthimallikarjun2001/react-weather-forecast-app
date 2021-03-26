@@ -15,17 +15,17 @@ const WeatherCard = ({dt, temp_min, temp_max, main, humidity, feels_like, icon})
         <Card.Title>{main}</Card.Title>
         {/*  datetime is received in milliseconds, let's turn into local date time */}
         <p>
-          Date: {date.toLocaleDateString()}
+          <b>Date:</b> {date.toLocaleDateString()}
         </p>
         <p>
-        Time: {date.toLocaleTimeString()}
+        <b>Time:</b> {date.toLocaleTimeString()}
         </p>
         {/* minimum temperature */}
-        <p>Min: {Math.round(temp_min - 273)} °C</p>
+        <p><b>Min:</b> {Math.round(temp_min - 273)} °C</p>
         {/* maximum temperature */}
-        <p>Max: {Math.round(temp_max - 273)} °C</p>
-        <p>Feels like: {Math.round(feels_like - 273)} °C</p>
-        <p>Humidity: {humidity}</p>
+        <p><b>Max:</b> {Math.round(temp_max - 273)} °C</p>
+        <p><b>Feels like:</b> {Math.round(feels_like - 273)} °C</p>
+        <p><b>Humidity:</b> {humidity}</p>
       </Card.Body>
     </Card>
   );
